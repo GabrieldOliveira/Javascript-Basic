@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <ul id="lista">
+
+        </ul>
+        
+    </div>
+    <script>
+        var nomes = ["Gabriel","Diego","Lucas"];
+
+        var container = document.querySelector("#lista");
+        
+        for(var i = 0; i <= nomes.length-1; i++){
+
+            var createLi = document.createElement("li");
+            var text = document.createTextNode(nomes[i]);
+            
+            createLi.appendChild(text);
+            container.appendChild(createLi);
+        }
+
+
+        
+    </script>
+</body>
+</html>
