@@ -15,31 +15,22 @@
     </div>
     <script>
         var nomes = ["Gabriel","Diego","Lucas"];
-
         var container = document.querySelector("#lista");
-
-
         function texto(txt){
             var createLi = document.createElement("li");
             var text = document.createTextNode(txt);
             
             createLi.appendChild(text);
             container.appendChild(createLi);
-
             return
         }
-
         for(var i = 0; i <= nomes.length-1; i++){
             texto(nomes[i]);
         }
-
         function adicionar(){
             var pegarInput = document.querySelector("input[name=nome]");
-
             texto(pegarInput.value);
-
             limparInput = pegarInput.value = "";
-
             return limparInput
         }
             

@@ -13,19 +13,15 @@
     </div>
     <script>
         var nomes = ["Gabriel","Diego","Lucas"];
-
         var container = document.querySelector("#lista");
         
         for(var i = 0; i <= nomes.length-1; i++){
-
             var createLi = document.createElement("li");
             var text = document.createTextNode(nomes[i]);
             
             createLi.appendChild(text);
             container.appendChild(createLi);
         }
-
-
         
     </script>
 </body>

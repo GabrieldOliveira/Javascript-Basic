@@ -12,7 +12,6 @@
         <button onclick="gerarBox()">Clique aqui</button>
     </div>
     <script>
-
         function gerarBox() {
             function getRandomColor() {
                 var letters = "0123456789ABCDEF";
@@ -25,12 +24,10 @@
             var newColor = getRandomColor();
             
             var container = document.querySelector("#app");
-
             var boxElement = document.createElement("div");
             boxElement.style.width = "100px";
             boxElement.style.height = "100px";
             boxElement.style.backgroundColor = newColor;
-
             container.appendChild(boxElement);
         }
     </script>
